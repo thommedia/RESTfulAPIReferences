@@ -4,7 +4,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var TaskSchema = new Schema({
+var ReferenceSchema = new Schema({
   name: {
     type: String,
     Required: 'Kindly enter the name of the task'
@@ -23,4 +23,4 @@ var TaskSchema = new Schema({
 });
 
 
-module.exports = mongoose.model('Tasks', TaskSchema);
+module.exports = mongoose.model('References', ReferenceSchema);
